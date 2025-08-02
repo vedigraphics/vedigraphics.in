@@ -1,16 +1,3 @@
-:root {
-  --primary: #18CBC2;
-  --navy: #173F5F;
-  --text: #3A4A59;
-  --red: #F44336;
-  --orange: #FF9800;
-  --yellow: #FFEB3B;
-  --green: #4CAF50;
-  --blue: #2196F3;
-  --violet: #9C27B0;
-  --white: #fff;
-}
-
 body {
   margin: 0;
   font-family: 'Inter', Arial, sans-serif;
@@ -218,3 +205,4 @@ footer {
   font-size: 1rem;
   margin-top: 2rem;
 }
+
