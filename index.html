@@ -5,55 +5,53 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Vedi Graphics</title>
   <link rel="stylesheet" href="styles.css">
-  <!-- Google Fonts (Montserrat for headings, Inter for body) -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <!-- Google Fonts: Montserrat and Inter (simple, trending fonts) -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
     <nav>
-      <div class="logo">
-        <img src="logo-placeholder.png" alt="Vedi Graphics Logo">
-      </div>
+      <div class="logo">Vedi Graphics</div>
       <ul id="nav-menu">
         <li><a href="#">Home</a></li>
-        <li><a href="#about">About Us</a></li>
+        <li><a href="#about">About</a></li>
         <li><a href="#services">Services</a></li>
         <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#pricing">Pricing</a></li>
-        <li><a href="#faq">FAQ</a></li>
-        <li><a href="#contact" class="btn">Contact Us</a></li>
+        <li><a href="#contact" class="btn">Contact</a></li>
       </ul>
       <div class="mobile-menu-icon" onclick="toggleMenu()">
         <span>&#9776;</span>
       </div>
     </nav>
   </header>
+
   <main>
     <section class="hero">
-      <h1>We Bring Your Ideas to Life!</h1>
-      <p class="subtitle">Creative <span class="highlight">Graphic Design</span> & <span class="highlight">Video Editing</span> services for modern brands.</p>
-      <a href="#portfolio" class="cta-btn">See Our Work</a>
+      <h1>Creative Design & Video Editing</h1>
+      <p class="subtitle">We bring your ideas to life with clear, compelling visuals.</p>
+      <a href="#portfolio" class="cta-btn">See Portfolio</a>
     </section>
-    
-    <!-- About, Services, Portfolio, etc. Use sample images you can replace later -->
+
     <section id="about">
       <h2>About Us</h2>
-      <p>Vedi Graphics is an emerging graphic design and video editing service provider, growing rapidly from humble beginnings to help brands stand out with creative visuals.</p>
-      <img src="about-image-placeholder.png" alt="About Vedi Graphics" class="placeholder-img">
+      <p>
+        Vedi Graphics grew from zero to a trusted service for graphics and video, blending creativity and reliability for every client.
+      </p>
+      <img src="about-placeholder.png" alt="About Vedi Graphics" class="placeholder-img">
     </section>
 
     <section id="services">
       <h2>Services</h2>
       <div class="service-list">
         <div class="service-item">
-          <img src="service-graphic-placeholder.png" alt="Graphic Design">
+          <img src="graphic-placeholder.png" alt="Graphic Design" class="icon-img">
           <h3>Graphic Design</h3>
-          <p>Logos, branding, posters, social media graphics, and more.</p>
+          <p>Logos, branding, social media posts, and more.</p>
         </div>
         <div class="service-item">
-          <img src="service-video-placeholder.png" alt="Video Editing">
+          <img src="video-placeholder.png" alt="Video Editing" class="icon-img">
           <h3>Video Editing</h3>
-          <p>Promotional videos, post-production, and creative video solutions.</p>
+          <p>Promotional, YouTube, and custom video edits.</p>
         </div>
       </div>
     </section>
@@ -61,39 +59,25 @@
     <section id="portfolio">
       <h2>Portfolio</h2>
       <div class="portfolio-gallery">
-        <img src="portfolio1-placeholder.png" alt="Project 1" class="placeholder-img">
-        <img src="portfolio2-placeholder.png" alt="Project 2" class="placeholder-img">
-        <img src="portfolio3-placeholder.png" alt="Project 3" class="placeholder-img">
+        <img src="portfolio1.png" alt="Sample work 1" class="placeholder-img">
+        <img src="portfolio2.png" alt="Sample work 2" class="placeholder-img">
       </div>
     </section>
 
-    <section id="pricing">
-      <h2>Pricing</h2>
-      <p>Contact us for a custom quote tailored to your needs.</p>
-    </section>
-
-    <section id="faq">
-      <h2>FAQ</h2>
-      <ul>
-        <li><strong>What services do you offer?</strong> Graphic design and video editing.</li>
-        <li><strong>How is pricing determined?</strong> Based on project scope and requirements.</li>
-      </ul>
-    </section>
-
     <section id="contact">
-      <h2>Contact Us</h2>
+      <h2>Contact</h2>
       <form>
-        <input type="text" placeholder="Your Name" required>
+        <input type="text" placeholder="Name" required>
         <input type="email" placeholder="Email" required>
-        <textarea placeholder="Your Message" required></textarea>
-        <button type="submit">Send Inquiry</button>
+        <textarea placeholder="Your Message" rows="4" required></textarea>
+        <button type="submit">Send Message</button>
       </form>
     </section>
   </main>
+
   <footer>
     <p>&copy; 2025 Vedi Graphics. All rights reserved.</p>
   </footer>
   <script src="script.js"></script>
 </body>
 </html>
-
