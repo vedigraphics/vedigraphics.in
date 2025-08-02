@@ -1,4 +1,4 @@
-// Simple mobile menu toggle
+// Mobile menu toggle
 function toggleMenu() {
   var navMenu = document.getElementById('nav-menu');
   navMenu.classList.toggle('active');
