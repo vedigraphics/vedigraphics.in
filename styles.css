@@ -105,6 +105,15 @@ nav {
   margin-bottom: 0.6rem;
   color: var(--primary);
 }
+.hero-banner {
+  width: 100%;
+  max-width: 1920px;
+  height: auto;
+  display: block;
+  margin: 0 auto 1.2rem auto; /* Centered and spaced below */
+  border-radius: 8px; /* Optional: rounded corners */
+  object-fit: cover;
+}
 .subtitle {
   color: var(--gray);
   font-size: 1.1rem;
@@ -218,3 +227,4 @@ footer {
   margin: 0 auto;
   border-top: 1px solid #edeffc;
 }
+
