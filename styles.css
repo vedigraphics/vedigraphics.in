@@ -176,6 +176,17 @@ section h2 {
   object-fit: cover;
 }
 
+/* About Section Banner Image */
+.about-banner {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1.5rem auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
 /* Services Section */
 .service-list {
   display: flex;
@@ -246,3 +257,4 @@ footer {
   margin: 0 auto;
   border-top: 1px solid #edeffc;
 }
+
