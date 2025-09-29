@@ -191,18 +191,18 @@ section h2 {
 .service-list {
   display: flex;
   gap: 1rem;
-  flex-wrap: nowrap;  /* Force all items stay in one row */
-  justify-content: space-between; /* Spread items to fill container */
+  flex-wrap: wrap; /* allow wrapping for responsiveness */
+  justify-content: center; /* center content within container */
   align-items: stretch;
-  width: 100vw;  /* Make container span full viewport width */
+  max-width: 1200px; /* limit max width for balanced design */
+  margin: 0 auto; /* center container horizontally */
+  padding: 1rem 1.5rem; /* add padding on sides */
   box-sizing: border-box;
-  padding: 0 1rem; /* Add some horizontal padding */
 }
 
 .service-item {
-  flex-grow: 1;
-  flex-basis: 0;
-  max-width: 45%; /* Limit max width to prevent too wide items */
+  flex: 1 1 300px;
+  max-width: 45%; /* two items per row roughly */
   text-align: center;
   padding: 0.5rem;
   box-sizing: border-box;
@@ -215,7 +215,6 @@ section h2 {
   object-fit: cover;
   border-radius: 8px;
 }
-
 .service-item h3 {
   margin-top: 0.5rem;
   font-size: 1.08rem;
@@ -274,6 +273,7 @@ footer {
   margin: 0 auto;
   border-top: 1px solid #edeffc;
 }
+
 
 
 
