@@ -191,18 +191,18 @@ section h2 {
 .service-list {
   display: flex;
   gap: 1rem;
-  flex-wrap: wrap; /* allow wrapping for responsiveness */
-  justify-content: center; /* center content within container */
+  flex-wrap: wrap; /* allow wrapping */
+  justify-content: center;
   align-items: stretch;
-  max-width: 1200px; /* limit max width for balanced design */
-  margin: 0 auto; /* center container horizontally */
-  padding: 1rem 1.5rem; /* add padding on sides */
+  max-width: 1200px;
+  margin: 0 auto; /* center container */
+  padding: 1rem 1.5rem;
   box-sizing: border-box;
 }
 
 .service-item {
-  flex: 1 1 300px;
-  max-width: 45%; /* two items per row roughly */
+  flex: 1 1 100%; /* full width on small screens */
+  max-width: 100%;
   text-align: center;
   padding: 0.5rem;
   box-sizing: border-box;
@@ -215,10 +215,19 @@ section h2 {
   object-fit: cover;
   border-radius: 8px;
 }
+
 .service-item h3 {
   margin-top: 0.5rem;
   font-size: 1.08rem;
   color: var(--dark);
+}
+
+/* Side by side on screens 768px and wider */
+@media (min-width: 768px) {
+  .service-item {
+    flex: 1 1 0;       /* flex-grow and shrink with base 0 */
+    max-width: none;   /* no max width limit */
+  }
 }
 
 /* Portfolio Gallery */
@@ -236,6 +245,7 @@ section h2 {
   background: #e5eceb;
 }
 
+/* Form Styles */
 form {
   display: flex;
   flex-direction: column;
@@ -264,6 +274,7 @@ form button:hover {
   background: var(--gray);
 }
 
+/* Footer */
 footer {
   background: var(--white);
   text-align: center;
