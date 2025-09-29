@@ -190,25 +190,25 @@ section h2 {
 /* Services Section */
 .service-list {
   display: flex;
-  gap: 1rem; /* reduced for tighter layout */
-  flex-wrap: wrap;
-  justify-content: space-between; /* spread items evenly */
-  align-items: stretch; /* make all items as tall as their contents */
+  gap: 0.5rem;
+  flex-wrap: nowrap;
+  justify-content: stretch;
+  align-items: stretch;
 }
 
 .service-item {
-  flex: 1 1 320px; /* let items grow more */
+  flex: 1 1 0;
   text-align: center;
-  padding: 0.5rem;  /* less padding for bigger images */
+  padding: 0.5rem;
   box-sizing: border-box;
 }
 
-.service-item img {
-  width: 100%;     /* fills container horizontally */
-  height: auto;    /* keeps aspect ratio */
+.icon-img {
+  width: 100% !important;
+  height: 270px !important;
+  object-fit: cover;
   display: block;
-  border-radius: 8px; /* optional: for rounded corners */
-  object-fit: cover;  /* crops image gracefully if needed */
+  border-radius: 8px;
 }
 
 .service-item h3 {
@@ -269,5 +269,6 @@ footer {
   margin: 0 auto;
   border-top: 1px solid #edeffc;
 }
+
 
 
