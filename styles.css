@@ -190,18 +190,21 @@ section h2 {
 /* Services Section */
 .service-list {
   display: flex;
-  gap: 1.2rem;
-  flex-wrap: wrap;
-  justify-content: flex-start;
+  gap: 1rem;
+  flex-wrap: nowrap;  /* Force all items stay in one row */
+  justify-content: space-between; /* Spread items to fill container */
   align-items: stretch;
+  width: 100vw;  /* Make container span full viewport width */
+  box-sizing: border-box;
+  padding: 0 1rem; /* Add some horizontal padding */
 }
 
 .service-item {
-  flex: 1 1 340px;
-  min-width: 260px;
-  max-width: 400px;
+  flex-grow: 1;
+  flex-basis: 0;
+  max-width: 45%; /* Limit max width to prevent too wide items */
   text-align: center;
-  padding: 0.7rem;
+  padding: 0.5rem;
   box-sizing: border-box;
 }
 
@@ -271,6 +274,7 @@ footer {
   margin: 0 auto;
   border-top: 1px solid #edeffc;
 }
+
 
 
 
