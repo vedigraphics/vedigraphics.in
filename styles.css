@@ -190,24 +190,26 @@ section h2 {
 /* Services Section */
 .service-list {
   display: flex;
-  gap: 0.5rem;
-  flex-wrap: nowrap;
-  justify-content: stretch;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   align-items: stretch;
 }
 
 .service-item {
-  flex: 1 1 0;
+  flex: 1 1 340px;
+  min-width: 260px;
+  max-width: 400px;
   text-align: center;
-  padding: 0.5rem;
+  padding: 0.7rem;
   box-sizing: border-box;
 }
 
 .icon-img {
-  width: 100% !important;
-  height: 270px !important;
-  object-fit: cover;
+  width: 100%;
+  height: auto;
   display: block;
+  object-fit: cover;
   border-radius: 8px;
 }
 
@@ -269,6 +271,7 @@ footer {
   margin: 0 auto;
   border-top: 1px solid #edeffc;
 }
+
 
 
 
