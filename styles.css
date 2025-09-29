@@ -167,8 +167,8 @@ section h2 {
 .placeholder-img,
 .icon-img {
   width: 100%;
-  max-width: 180px;
-  min-height: 120px;
+  max-width: 1020px;
+  min-height: auto;
   background: #e5eceb;
   display: block;
   margin: 1.2rem auto 0 auto;
@@ -259,6 +259,7 @@ footer {
   margin: 0 auto;
   border-top: 1px solid #edeffc;
 }
+
 
 
 
