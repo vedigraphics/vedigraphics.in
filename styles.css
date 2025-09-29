@@ -188,73 +188,21 @@ section h2 {
 }
 
 /* Services Section */
-/* Container for services */
 .service-list {
   display: flex;
-  flex-wrap: nowrap;           /* Keep items side by side */
-  justify-content: space-around; /* Space evenly */
-  align-items: center;
-  width: 100vw;                /* Full viewport width */
-  padding: 2rem 3vw;
-  box-sizing: border-box;
-  background: #f9fafb;         /* Optional: background for section */
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 }
-
-/* Each service item */
 .service-item {
-  flex: 0 0 48vw;              /* Nearly half viewport width */
-  height: 360px;               /* Fixed height for big images */
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem 1.5rem;
-  background: #fff;            /* Optional: card background */
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-/* Image inside service item */
-.icon-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;           /* Fill container, crop as needed */
-  border-radius: 12px;
-  display: block;
-}
-
-/* Title below each image */
-.service-item h3 {
-  margin: 1rem 0 0 0;
-  font-size: 1.38rem;
-  color: var(--dark);
-  font-weight: 700;
-}
-
-/* Description paragraph */
-.service-item p {
-  font-size: 1rem;
-  color: #444;
-  margin-top: 0.5rem;
+  flex: 1 1 240px;
   text-align: center;
+  padding: 1.2rem 0.7rem;
 }
-
-/* Responsive: stack vertically on tablets and smaller */
-@media (max-width: 1024px) {
-  .service-list {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .service-item {
-    flex: 1 1 90%;
-    height: auto;             /* auto height for stacking */
-    margin-bottom: 2rem;
-  }
-  .icon-img {
-    height: auto;
-    max-height: 360px;
-  }
+.service-item h3 {
+  margin-top: 1rem;
+  font-size: 1.08rem;
+  color: var(--dark);
 }
 
 /* Portfolio Gallery */
@@ -311,6 +259,7 @@ footer {
   margin: 0 auto;
   border-top: 1px solid #edeffc;
 }
+
 
 
 
