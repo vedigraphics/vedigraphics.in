@@ -213,8 +213,8 @@ section h2 {
   justify-content: flex-start;
 }
 .portfolio-gallery img {
-  width: 170px;
-  height: 110px;
+  width: 1400px;
+  height: auto;
   border-radius: 7px;
   object-fit: cover;
   background: #e5eceb;
@@ -259,6 +259,7 @@ footer {
   margin: 0 auto;
   border-top: 1px solid #edeffc;
 }
+
 
 
 
